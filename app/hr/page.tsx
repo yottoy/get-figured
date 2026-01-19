@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Users, ArrowRight } from 'lucide-react'
+import { Users } from 'lucide-react'
 
 const tools = [
   { 
@@ -39,53 +39,35 @@ const tools = [
 
 export default function HRToolsPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 md:py-24">
       <div className="mb-12">
-        <div className="flex items-center mb-4">
-          <div className="p-3 rounded-lg bg-green-50 border border-green-200 mr-4">
-            <Users className="w-10 h-10 text-green-700" />
+        <div className="flex items-start gap-4 mb-6">
+          <div className="p-3 bg-[#F8FAFC] rounded-lg border border-[#E2E8F0]">
+            <Users className="w-6 h-6 text-[#64748B]" strokeWidth={1.5} />
           </div>
           <div>
-            <h1 className="text-4xl font-bold text-slate-900">
+            <h1 className="text-3xl sm:text-4xl font-bold text-[#0F172A] tracking-tight leading-tight">
               HR & PTO Calculators
             </h1>
-            <p className="text-lg text-slate-600">
-              {tools.length} free tools for HR professionals and employees
-            </p>
           </div>
         </div>
-        <p className="text-lg text-slate-600 mt-4">
+        <p className="text-lg text-[#64748B] leading-relaxed max-w-3xl">
           Calculate PTO accrual, track vacation time, manage sick leave. 
           Stay compliant with state and federal regulations.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {tools.map((tool, idx) => (
           <Link
             key={idx}
             href={tool.url}
-            className={`p-6 rounded-lg border-2 transition hover:shadow-lg group ${
-              tool.featured 
-                ? 'border-green-300 bg-green-50 hover:border-green-500' 
-                : 'border-slate-200 bg-white hover:border-slate-300'
-            }`}
+            className="group p-6 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg hover:border-[#94A3B8] transition-all"
           >
-            <div className="flex justify-between items-start mb-3">
-              <h2 className="font-bold text-lg text-slate-900 leading-tight group-hover:text-green-700 transition">
-                {tool.name}
-              </h2>
-              {tool.featured && (
-                <span className="text-xs bg-green-600 text-white px-2 py-1 rounded font-semibold ml-2">
-                  Popular
-                </span>
-              )}
-            </div>
-            <p className="text-sm text-slate-600 mb-3">{tool.description}</p>
-            <div className="flex items-center justify-between">
-              <span className="text-xs text-slate-500">{tool.volume} searches</span>
-              <ArrowRight className="w-4 h-4 text-green-600 opacity-0 group-hover:opacity-100 transition" />
-            </div>
+            <h2 className="font-semibold text-[#0F172A] leading-tight text-base mb-2 group-hover:text-[#64748B] transition-colors">
+              {tool.name}
+            </h2>
+            <p className="text-sm text-[#64748B] leading-relaxed">{tool.description}</p>
           </Link>
         ))}
       </div>

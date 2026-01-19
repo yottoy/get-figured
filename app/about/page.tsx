@@ -1,49 +1,44 @@
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold text-slate-900 mb-6">About Get Figured</h1>
+      <h1 className="text-4xl font-bold text-[#0F172A] mb-6">About Get Figured</h1>
       
-      <div className="prose prose-lg">
+      <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-[#0F172A] prose-p:text-[#64748B] prose-p:leading-relaxed prose-ul:text-[#64748B] prose-strong:text-[#0F172A]">
         <p>
-          Get Figured is a free collection of business calculators designed for freelancers, 
-          consultants, and small business owners. Our mission is to help you make better 
-          financial decisions with accurate, easy-to-use tools.
+          Get Figured provides free business calculators for freelancers, consultants, and small business owners. 
+          Calculate consulting rates, PTO accrual, profit margins, and other essential business metrics.
         </p>
 
-        <h2>Why We Built This</h2>
+        <h2>Business Calculators We Offer</h2>
+        
+        <h3>Freelance & Consulting Calculators</h3>
         <p>
-          As freelancers ourselves, we struggled to find simple, reliable calculators for 
-          common business tasks like setting rates, tracking PTO, and calculating margins. 
-          Most tools were either too complex, required signup, or cost money.
-        </p>
-        <p>
-          We built Get Figured to be different: completely free, no signup required, 
-          mobile-friendly, and focused on the calculations that matter most to small businesses.
+          Our freelance calculators help independent professionals determine appropriate rates and fees. 
+          Calculate consulting hourly rates, project fees, contractor rates, and generate estimates and invoices.
         </p>
 
-        <h2>Our Principles</h2>
-        <ul>
-          <li><strong>Always Free:</strong> All 19 calculators are free forever, no hidden costs</li>
-          <li><strong>Privacy First:</strong> No signup required, your data stays on your device</li>
-          <li><strong>Accuracy:</strong> All formulas use industry standards and best practices</li>
-          <li><strong>Mobile Friendly:</strong> Works perfectly on any device, anywhere</li>
-        </ul>
-
-        <h2>What We Offer</h2>
+        <h3>HR & PTO Calculators</h3>
         <p>
-          We currently offer 19 free calculators across 4 categories:
+          Human resources calculators for tracking employee time off. Calculate PTO accrual, vacation accrual, 
+          sick leave accrual, and time off for both salaried and hourly employees.
         </p>
-        <ul>
-          <li>Freelance & Consulting (8 tools)</li>
-          <li>HR & PTO (5 tools)</li>
-          <li>Time & Payroll (2 tools)</li>
-          <li>Finance & Profit (4 tools)</li>
-        </ul>
 
-        <h2>Contact Us</h2>
+        <h3>Time & Payroll Calculators</h3>
         <p>
-          Have questions, feedback, or suggestions? We'd love to hear from you at{' '}
-          <a href="mailto:hello@getfigured.co">hello@getfigured.co</a>
+          Time tracking and payroll calculators for accurate wage calculations. Calculate overtime hours, 
+          total work hours with lunch breaks, and other payroll-related metrics.
+        </p>
+
+        <h3>Finance & Profit Calculators</h3>
+        <p>
+          Financial calculators for business profitability analysis. Calculate markup percentages, profit margins, 
+          profit and loss statements, and restaurant-specific profit margins.
+        </p>
+
+        <h2>Why Use Get Figured</h2>
+        <p>
+          All calculators use industry-standard formulas and are completely free to use. 
+          No signup or registration required. Your data remains private and is not stored on our servers.
         </p>
       </div>
     </div>

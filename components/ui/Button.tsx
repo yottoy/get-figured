@@ -17,14 +17,15 @@ export default function Button({
   return (
     <button
       className={cn(
-        "inline-flex items-center justify-center font-medium rounded-lg transition-all",
-        "focus:outline-none focus:ring-2 focus:ring-offset-2",
-        variant === 'primary' && "bg-primary text-white hover:bg-blue-700 focus:ring-primary",
-        variant === 'secondary' && "bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 focus:ring-slate-500",
-        variant === 'ghost' && "text-slate-600 hover:bg-slate-100",
-        size === 'sm' && "px-3 py-1.5 text-sm",
-        size === 'md' && "px-6 py-3 text-base",
-        size === 'lg' && "px-8 py-4 text-lg",
+        "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200",
+        "focus:outline-none focus-visible:shadow-focus",
+        "disabled:opacity-50 disabled:cursor-not-allowed",
+        variant === 'primary' && "bg-[#0F172A] text-white border-0 hover:bg-[#1E293B] hover:-translate-y-0.5 active:translate-y-0 transition-all",
+        variant === 'secondary' && "bg-white text-[#0F172A] border-2 border-[#E2E8F0] hover:border-[#94A3B8] hover:bg-[#F8FAFC]",
+        variant === 'ghost' && "text-[#64748B] hover:bg-[#F1F5F9] hover:text-[#0F172A]",
+        size === 'sm' && "px-4 py-2 text-sm gap-1.5",
+        size === 'md' && "px-6 py-3 text-base gap-2",
+        size === 'lg' && "px-8 py-3.5 text-base gap-2",
         className
       )}
       {...props}

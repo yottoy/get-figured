@@ -32,132 +32,142 @@ export default function ConsultingRateCalculator() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="bg-white min-h-screen">
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">
-          Consulting Rate Calculator - Calculate Your Hourly Rate
-        </h1>
-        <p className="text-lg text-slate-600">
-          Calculate your consulting rate based on your desired annual income, billable hours, 
-          and business expenses. Get accurate hourly, daily, and project rates in seconds.
-        </p>
+      <div className="border-b border-[#E2E8F0]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12 sm:py-16">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F172A] mb-4 tracking-tight leading-tight">
+            Consulting Rate Calculator
+          </h1>
+          <p className="text-lg text-[#64748B] leading-relaxed max-w-3xl">
+            Calculate your consulting rate based on your desired annual income, billable hours, 
+            and business expenses.
+          </p>
+        </div>
       </div>
 
       {/* Calculator */}
-      <div className="grid md:grid-cols-2 gap-8 mb-12">
-        {/* Inputs */}
-        <div className="bg-white p-6 rounded-lg border border-slate-200">
-          <h2 className="text-xl font-semibold mb-6">Your Information</h2>
-          
-          <div className="space-y-4">
-            <CurrencyInput
-              label="Desired Annual Salary"
-              value={inputs.desiredSalary}
-              onChange={(v) => setInputs({ ...inputs, desiredSalary: v })}
-              min={20000}
-              max={500000}
-              helper="How much do you want to take home per year?"
-            />
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8 sm:py-12">
+        <div className="grid lg:grid-cols-[600px_1fr] gap-6 sm:gap-8 lg:gap-12 items-start">
+          {/* Inputs */}
+          <div className="bg-[#F8FAFC] p-6 sm:p-8 lg:p-10 rounded-lg border border-[#E2E8F0]">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-[#0F172A]">Your Information</h2>
+            
+            <div className="space-y-5 sm:space-y-6">
+              <CurrencyInput
+                label="Desired Annual Salary"
+                value={inputs.desiredSalary}
+                onChange={(v) => setInputs({ ...inputs, desiredSalary: v })}
+                min={20000}
+                max={500000}
+                helper="How much do you want to take home per year?"
+              />
 
-            <NumberInput
-              label="Billable Hours per Year"
-              value={inputs.billableHours}
-              onChange={(v) => setInputs({ ...inputs, billableHours: v })}
-              min={1000}
-              max={2080}
-              suffix="hours"
-              helper="Most consultants bill 1,500-1,800 hours per year (75% utilization)"
-            />
+              <NumberInput
+                label="Billable Hours per Year"
+                value={inputs.billableHours}
+                onChange={(v) => setInputs({ ...inputs, billableHours: v })}
+                min={1000}
+                max={2080}
+                suffix="hours"
+                helper="Most consultants bill 1,500-1,800 hours per year (75% utilization)"
+              />
 
-            <PercentInput
-              label="Overhead & Expenses"
-              value={inputs.overheadPercent}
-              onChange={(v) => setInputs({ ...inputs, overheadPercent: v })}
-              min={15}
-              max={40}
-              helper="Business expenses (software, insurance, equipment, etc.)"
-            />
+              <PercentInput
+                label="Overhead & Expenses"
+                value={inputs.overheadPercent}
+                onChange={(v) => setInputs({ ...inputs, overheadPercent: v })}
+                min={15}
+                max={40}
+                helper="Business expenses (software, insurance, equipment, etc.)"
+              />
 
-            <PercentInput
-              label="Self-Employment Tax"
-              value={inputs.taxPercent}
-              onChange={(v) => setInputs({ ...inputs, taxPercent: v })}
-              min={25}
-              max={35}
-              helper="Federal + state income tax + self-employment tax"
-            />
+              <PercentInput
+                label="Self-Employment Tax"
+                value={inputs.taxPercent}
+                onChange={(v) => setInputs({ ...inputs, taxPercent: v })}
+                min={25}
+                max={35}
+                helper="Federal + state income tax + self-employment tax"
+              />
 
-            <PercentInput
-              label="Desired Profit Margin"
-              value={inputs.profitMargin}
-              onChange={(v) => setInputs({ ...inputs, profitMargin: v })}
-              min={10}
-              max={30}
-              helper="Additional profit for business growth and savings"
-            />
+              <PercentInput
+                label="Desired Profit Margin"
+                value={inputs.profitMargin}
+                onChange={(v) => setInputs({ ...inputs, profitMargin: v })}
+                min={10}
+                max={30}
+                helper="Additional profit for business growth and savings"
+              />
 
-            <Button variant="secondary" onClick={handleReset} className="w-full">
-              <RefreshCw className="w-4 h-4 mr-2" />
-              Reset to Defaults
-            </Button>
+              <Button variant="secondary" onClick={handleReset} className="w-full mt-4">
+                <RefreshCw className="w-4 h-4" strokeWidth={2.5} />
+                Reset to Defaults
+              </Button>
+            </div>
           </div>
-        </div>
 
-        {/* Results */}
-        <div>
-          <h2 className="text-xl font-semibold mb-6">Your Rates</h2>
-          
-          <div className="space-y-4">
-            <ResultCard
-              label="Recommended Hourly Rate"
-              value={formatCurrency(results.recommendedRate)}
-              subtitle="Rounded to nearest $5"
-              variant="primary"
-            />
+          {/* Results */}
+          <div className="lg:sticky lg:top-6">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-[#0F172A]">Your Rates</h2>
+            
+            <div className="space-y-4">
+              <ResultCard
+                label="Recommended Hourly Rate"
+                value={formatCurrency(results.recommendedRate)}
+                subtitle="Rounded to nearest $5"
+                variant="primary"
+              />
 
-            <ResultCard
-              label="Exact Hourly Rate"
-              value={formatCurrency(results.hourlyRate)}
-              subtitle="Based on your inputs"
-            />
+              <div className="grid sm:grid-cols-2 gap-4">
+                <ResultCard
+                  label="Exact Hourly Rate"
+                  value={formatCurrency(results.hourlyRate)}
+                  subtitle="Based on your inputs"
+                />
 
-            <ResultCard
-              label="Daily Rate"
-              value={formatCurrency(results.dailyRate)}
-              subtitle="8 hours per day"
-            />
+                <ResultCard
+                  label="Daily Rate"
+                  value={formatCurrency(results.dailyRate)}
+                  subtitle="8 hours per day"
+                />
+              </div>
 
-            <ResultCard
-              label="Weekly Rate"
-              value={formatCurrency(results.weeklyRate)}
-              subtitle="40 hours per week"
-            />
+              <div className="grid sm:grid-cols-2 gap-4">
+                <ResultCard
+                  label="Weekly Rate"
+                  value={formatCurrency(results.weeklyRate)}
+                  subtitle="40 hours per week"
+                />
 
-            <ResultCard
-              label="Monthly Rate"
-              value={formatCurrency(results.monthlyRate)}
-              subtitle="~173 hours per month"
-            />
+                <ResultCard
+                  label="Monthly Rate"
+                  value={formatCurrency(results.monthlyRate)}
+                  subtitle="~173 hours per month"
+                />
+              </div>
 
-            <ResultCard
-              label="Annual Revenue Needed"
-              value={formatCurrency(results.annualRevenue)}
-              subtitle="Total revenue to achieve your goals"
-            />
+              <ResultCard
+                label="Annual Revenue Needed"
+                value={formatCurrency(results.annualRevenue)}
+                subtitle="Total revenue to achieve your goals"
+                variant="secondary"
+              />
 
-            <ResultCard
-              label="Break-Even Rate"
-              value={formatCurrency(results.breakEvenRate)}
-              subtitle="Minimum rate to cover costs (no profit)"
-              variant="secondary"
-            />
+              <ResultCard
+                label="Break-Even Rate"
+                value={formatCurrency(results.breakEvenRate)}
+                subtitle="Minimum rate to cover costs (no profit)"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Content Sections */}
-      <div className="prose max-w-none">
+      <div className="bg-white border-t border-[#E2E8F0]">
+        <div className="max-w-4xl mx-auto px-6 lg:px-12 py-12 sm:py-16 md:py-20">
+          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-[#0F172A] prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-12 prose-h3:text-xl prose-h3:mb-4 prose-h3:mt-8 prose-p:text-[#64748B] prose-p:leading-relaxed prose-ul:text-[#64748B] prose-li:leading-relaxed prose-strong:text-[#0F172A] prose-strong:font-semibold prose-table:border-2 prose-table:border-[#E2E8F0] prose-table:rounded-lg prose-th:border prose-th:border-[#E2E8F0] prose-th:bg-[#F8FAFC] prose-th:p-4 prose-th:font-semibold prose-th:text-[#0F172A] prose-td:border prose-td:border-[#E2E8F0] prose-td:p-4 prose-td:text-[#64748B]">
         <h2>How to Use the Consulting Rate Calculator</h2>
         
         <h3>Step 1: Enter Your Desired Annual Salary</h3>
@@ -177,9 +187,12 @@ export default function ConsultingRateCalculator() {
           meaning 1,200-1,600 billable hours per year.
         </p>
         <p>
-          <strong>Tip:</strong> New consultants should aim for 1,200-1,400 hours. Established 
-          consultants can target 1,500-1,800 hours.
         </p>
+        <div className="bg-[#F8FAFC] border-l-4 border-[#0F172A] p-6 rounded-r-lg my-6">
+          <p className="text-sm font-semibold text-[#0F172A] uppercase tracking-wide mb-2">Pro Tip</p>
+          <p className="text-[#0F172A] mb-0">New consultants should aim for 1,200-1,400 hours. Established 
+          consultants can target 1,500-1,800 hours.</p>
+        </div>
 
         <h3>Step 3: Account for Business Expenses</h3>
         <p>
@@ -194,17 +207,19 @@ export default function ConsultingRateCalculator() {
           plus daily, weekly, and monthly rates for different project structures.
         </p>
 
-        <h3>Common Mistakes to Avoid:</h3>
-        <ul>
-          <li>❌ <strong>Forgetting about taxes:</strong> Self-employment tax adds 15.3% on top of 
-          income tax</li>
-          <li>❌ <strong>Overestimating billable hours:</strong> Assuming 2,080 hours (100% 
-          utilization) is unrealistic</li>
-          <li>❌ <strong>Not including profit margin:</strong> You need savings for slow periods 
-          and business growth</li>
-          <li>✅ <strong>Correct approach:</strong> Be conservative with billable hours and 
-          realistic about expenses</li>
-        </ul>
+        <div className="bg-[#F8FAFC] border-l-4 border-[#64748B] p-6 rounded-r-lg my-8">
+          <h4 className="text-lg font-semibold text-[#0F172A] mb-4">Common Mistakes to Avoid</h4>
+          <ul className="space-y-3 text-[#0F172A]">
+            <li>❌ <strong>Forgetting about taxes:</strong> Self-employment tax adds 15.3% on top of 
+            income tax</li>
+            <li>❌ <strong>Overestimating billable hours:</strong> Assuming 2,080 hours (100% 
+            utilization) is unrealistic</li>
+            <li>❌ <strong>Not including profit margin:</strong> You need savings for slow periods 
+            and business growth</li>
+            <li>✅ <strong>Correct approach:</strong> Be conservative with billable hours and 
+            realistic about expenses</li>
+          </ul>
+        </div>
 
         <h2>Why Use a Consulting Rate Calculator?</h2>
 
@@ -317,6 +332,8 @@ export default function ConsultingRateCalculator() {
           (retainers), faster payment terms (2% discount for payment within 7 days), or package 
           deals that provide more value. Never discount for vague reasons like "to win the project."
         </p>
+          </div>
+        </div>
       </div>
     </div>
   )

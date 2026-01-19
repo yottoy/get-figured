@@ -24,8 +24,8 @@ export default function PercentInput({
   className
 }: PercentInputProps) {
   return (
-    <div className={cn("space-y-1", className)}>
-      <label className="block text-sm font-medium text-slate-700">
+    <div className={cn("space-y-2", className)}>
+      <label className="block text-sm font-semibold text-[#0F172A]">
         {label}
       </label>
       <div className="relative">
@@ -36,14 +36,15 @@ export default function PercentInput({
           min={min}
           max={max}
           step={step}
-          className="block w-full pr-8 pl-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary sm:text-sm"
+          inputMode="numeric"
+          className="block w-full pr-12 pl-5 py-4 border-2 border-[#E2E8F0] rounded-lg bg-white text-[#0F172A] font-mono text-lg tabular-nums focus:outline-none focus:border-[#94A3B8] hover:border-[#CBD5E1] transition-all"
         />
-        <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-          <span className="text-slate-500 sm:text-sm">%</span>
+        <div className="absolute inset-y-0 right-0 pr-5 flex items-center pointer-events-none">
+          <span className="text-[#64748B] font-semibold text-lg">%</span>
         </div>
       </div>
       {helper && (
-        <p className="text-xs text-slate-500">{helper}</p>
+        <p className="text-sm text-[#64748B] leading-relaxed">{helper}</p>
       )}
     </div>
   )

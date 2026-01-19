@@ -17,25 +17,23 @@ export default function ResultCard({
 }: ResultCardProps) {
   return (
     <div className={cn(
-      "p-6 rounded-lg border",
-      variant === 'primary' && "bg-primary/5 border-primary/20",
-      variant === 'secondary' && "bg-secondary/5 border-secondary/20",
-      variant === 'default' && "bg-white border-slate-200",
+      "p-6 rounded-lg border transition-all",
+      variant === 'primary' && "bg-[#F8FAFC] border-2 border-[#0F172A]",
+      variant === 'secondary' && "bg-[#F8FAFC] border border-[#E2E8F0]",
+      variant === 'default' && "bg-[#F8FAFC] border border-[#E2E8F0]",
       className
     )}>
-      <p className="text-xs font-medium text-slate-500 uppercase tracking-wide mb-1">
+      <p className="text-xs font-semibold text-[#64748B] uppercase tracking-wider mb-2">
         {label}
       </p>
       <p className={cn(
-        "text-3xl font-bold font-mono",
-        variant === 'primary' && "text-primary",
-        variant === 'secondary' && "text-secondary",
-        variant === 'default' && "text-slate-900"
+        "font-bold font-mono tabular-nums mb-1",
+        variant === 'primary' ? "text-4xl text-[#0F172A]" : "text-3xl text-[#0F172A]"
       )}>
         {value}
       </p>
       {subtitle && (
-        <p className="text-sm text-slate-500 mt-1">{subtitle}</p>
+        <p className="text-sm text-[#64748B] mt-2 leading-relaxed">{subtitle}</p>
       )}
     </div>
   )
