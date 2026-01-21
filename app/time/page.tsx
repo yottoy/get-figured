@@ -1,5 +1,22 @@
 import Link from 'next/link'
 import { Clock } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Time & Payroll Calculators - Get Figured',
+  description: 'Free time calculators for work hours, overtime pay, and timesheets. Perfect for hourly employees and payroll managers.',
+  keywords: 'overtime calculator, work hours calculator, timesheet calculator, payroll calculator',
+  alternates: {
+    canonical: 'https://getfigured.co/time',
+  },
+  openGraph: {
+    title: 'Time & Payroll Calculators - Get Figured',
+    description: 'Free time calculators for work hours, overtime pay, and timesheets.',
+    url: 'https://getfigured.co/time',
+    siteName: 'Get Figured',
+    type: 'website',
+  },
+}
 
 const tools = [
   { 
