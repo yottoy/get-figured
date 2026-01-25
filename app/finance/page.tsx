@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: 'Free finance calculators for profit margins, markup, P&L statements, and restaurant margins. Make better financial decisions for your business.',
   keywords: 'profit margin calculator, markup calculator, profit and loss, restaurant margin, financial calculator',
   alternates: {
-    canonical: 'https://getfigured.co/finance',
+    canonical: 'https://www.getfigured.co/finance',
   },
   openGraph: {
     title: 'Finance & Profit Calculators - Get Figured',
     description: 'Free finance calculators for profit margins, markup, P&L statements, and restaurant margins.',
-    url: 'https://getfigured.co/finance',
+    url: 'https://www.getfigured.co/finance',
     siteName: 'Get Figured',
     type: 'website',
   },

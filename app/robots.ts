@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://getfigured.co/sitemap.xml',
+    sitemap: 'https://www.getfigured.co/sitemap.xml',
   }
 }

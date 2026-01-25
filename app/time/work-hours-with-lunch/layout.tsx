@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: 'Free work hours calculator with lunch break. Calculate total work hours minus unpaid lunch breaks for accurate timesheets and payroll.',
   keywords: 'work hours calculator, timesheet calculator, lunch break calculator, work time calculator, hours worked',
   alternates: {
-    canonical: 'https://getfigured.co/time/work-hours-with-lunch',
+    canonical: 'https://www.getfigured.co/time/work-hours-with-lunch',
   },
   openGraph: {
     title: 'Work Hours Calculator with Lunch Break - Timesheet Tool',
     description: 'Free work hours calculator with lunch break. Calculate total work hours minus unpaid lunch breaks.',
-    url: 'https://getfigured.co/time/work-hours-with-lunch',
+    url: 'https://www.getfigured.co/time/work-hours-with-lunch',
     siteName: 'Get Figured',
     type: 'website',
   },

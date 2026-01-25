@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: 'Free time calculators for work hours, overtime pay, and timesheets. Perfect for hourly employees and payroll managers.',
   keywords: 'overtime calculator, work hours calculator, timesheet calculator, payroll calculator',
   alternates: {
-    canonical: 'https://getfigured.co/time',
+    canonical: 'https://www.getfigured.co/time',
   },
   openGraph: {
     title: 'Time & Payroll Calculators - Get Figured',
     description: 'Free time calculators for work hours, overtime pay, and timesheets.',
-    url: 'https://getfigured.co/time',
+    url: 'https://www.getfigured.co/time',
     siteName: 'Get Figured',
     type: 'website',
   },

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://getfigured.co'
+  const baseUrl = 'https://www.getfigured.co'
   
   const staticPages = [
     '',

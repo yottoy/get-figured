@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: 'Free HR calculators for PTO accrual, vacation time, and sick leave. Track employee time off and stay compliant with state regulations.',
   keywords: 'PTO calculator, vacation accrual, sick leave, time off calculator, HR calculator',
   alternates: {
-    canonical: 'https://getfigured.co/hr',
+    canonical: 'https://www.getfigured.co/hr',
   },
   openGraph: {
     title: 'HR & PTO Calculators - Get Figured',
     description: 'Free HR calculators for PTO accrual, vacation time, and sick leave.',
-    url: 'https://getfigured.co/hr',
+    url: 'https://www.getfigured.co/hr',
     siteName: 'Get Figured',
     type: 'website',
   },

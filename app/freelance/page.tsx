@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: 'Free freelance calculators for rates, pricing, estimates, and invoices. Calculate consulting rates, contractor rates, and more. No signup required.',
   keywords: 'consulting rate calculator, freelance pricing, contractor rate, invoice generator, estimate generator',
   alternates: {
-    canonical: 'https://getfigured.co/freelance',
+    canonical: 'https://www.getfigured.co/freelance',
   },
   openGraph: {
     title: 'Freelance & Consulting Calculators - Get Figured',
     description: 'Free freelance calculators for rates, pricing, estimates, and invoices.',
-    url: 'https://getfigured.co/freelance',
+    url: 'https://www.getfigured.co/freelance',
     siteName: 'Get Figured',
     type: 'website',
   },

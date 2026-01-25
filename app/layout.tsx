@@ -22,6 +22,31 @@ export const metadata: Metadata = {
   title: "Get Figured - Free Business Calculators & Tools",
   description: "Free business calculators for freelancers, consultants, and small business owners. Calculate rates, PTO, profit margins, and more.",
   keywords: "business calculator, consulting rate calculator, PTO calculator, profit margin calculator, freelance pricing",
+  metadataBase: new URL('https://www.getfigured.co'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Get Figured - Free Business Calculators & Tools',
+    description: 'Free business calculators for freelancers, consultants, and small business owners.',
+    url: 'https://www.getfigured.co',
+    siteName: 'Get Figured',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Get Figured - Free Business Calculators & Tools',
+    description: 'Free business calculators for freelancers, consultants, and small business owners.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({

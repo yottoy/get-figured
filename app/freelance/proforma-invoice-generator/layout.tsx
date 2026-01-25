@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: 'Free proforma invoice generator. Create proforma invoices for international shipments, customs, and quotations. Download instantly.',
   keywords: 'proforma invoice generator, proforma invoice template, international invoice, customs invoice',
   alternates: {
-    canonical: 'https://getfigured.co/freelance/proforma-invoice-generator',
+    canonical: 'https://www.getfigured.co/freelance/proforma-invoice-generator',
   },
   openGraph: {
     title: 'Proforma Invoice Generator - Free Template',
     description: 'Free proforma invoice generator. Create proforma invoices for international shipments and customs.',
-    url: 'https://getfigured.co/freelance/proforma-invoice-generator',
+    url: 'https://www.getfigured.co/freelance/proforma-invoice-generator',
     siteName: 'Get Figured',
     type: 'website',
   },
