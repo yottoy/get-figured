@@ -9,6 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/hr',
     '/time',
     '/finance',
+    '/about',
+    '/privacy',
+    '/terms',
   ]
 
   const freelanceTools = [
@@ -54,6 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
-    priority: path === '' ? 1.0 : path.includes('/freelance/') || path.includes('/hr/') || path.includes('/time/') || path.includes('/finance/') ? 0.8 : 0.9,
+    priority: path === '' ? 1.0 : ['/about', '/privacy', '/terms'].includes(path) ? 0.3 : path.includes('/freelance/') || path.includes('/hr/') || path.includes('/time/') || path.includes('/finance/') ? 0.8 : 0.9,
   }))
 }

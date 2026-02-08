@@ -1,3 +1,13 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy - Get Figured',
+  description: 'Privacy policy for Get Figured. Learn how we handle your data. All calculations are processed in your browser — no data is stored on our servers.',
+  alternates: {
+    canonical: 'https://www.getfigured.co/privacy',
+  },
+}
+
 export default function PrivacyPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -1,3 +1,13 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Get Figured - Free Business Calculators',
+  description: 'Get Figured provides free business calculators for freelancers, consultants, and small business owners. Calculate rates, PTO, profit margins, and more.',
+  alternates: {
+    canonical: 'https://www.getfigured.co/about',
+  },
+}
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
