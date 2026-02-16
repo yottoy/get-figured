@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Markup Percentage Calculator - Calculate Markup & Margin',
-  description: 'Free markup percentage calculator. Calculate markup and margin from cost and selling price. Understand the difference between markup and margin for retail and business.',
-  keywords: 'markup calculator, markup percentage, profit margin, margin calculator, retail pricing',
+  title: 'Free Markup Percentage Calculator: Markup vs Margin Explained | Get Figured',
+  description: 'Calculate markup % and profit margin from cost and selling price. Instantly see the difference between markup and margin with a visual breakdown. For retail and wholesale.',
+  keywords: 'markup calculator, markup percentage calculator, markup vs margin, profit margin calculator, margin calculator, retail pricing calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/finance/markup-percentage',
   },
   openGraph: {
-    title: 'Markup Percentage Calculator - Calculate Markup & Margin',
-    description: 'Free markup percentage calculator. Calculate markup and margin from cost and selling price.',
+    title: 'Free Markup Percentage Calculator: Markup vs Margin Explained | Get Figured',
+    description: 'Calculate markup % and profit margin from cost and selling price. Instantly see the difference between markup and margin with a visual breakdown.',
     url: 'https://www.getfigured.co/finance/markup-percentage',
     siteName: 'Get Figured',
     type: 'website',

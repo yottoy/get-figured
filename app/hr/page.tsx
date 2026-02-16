@@ -3,15 +3,15 @@ import { Users } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'HR & PTO Calculators - Get Figured',
-  description: 'Free HR calculators for PTO accrual, vacation time, and sick leave. Track employee time off and stay compliant with state regulations.',
-  keywords: 'PTO calculator, vacation accrual, sick leave, time off calculator, HR calculator',
+  title: 'Free HR & PTO Calculators: Accrual, Vacation & Sick Leave | Get Figured',
+  description: '5 free HR tools to calculate PTO accrual, vacation days, sick leave, and time off balances. Hourly and salaried employee support. State compliance built in.',
+  keywords: 'PTO calculator, PTO accrual calculator, vacation accrual calculator, sick leave calculator, time off calculator, HR calculator, paid time off',
   alternates: {
     canonical: 'https://www.getfigured.co/hr',
   },
   openGraph: {
-    title: 'HR & PTO Calculators - Get Figured',
-    description: 'Free HR calculators for PTO accrual, vacation time, and sick leave.',
+    title: 'Free HR & PTO Calculators: Accrual, Vacation & Sick Leave | Get Figured',
+    description: '5 free HR tools to calculate PTO accrual, vacation days, sick leave, and time off balances. State compliance built in.',
     url: 'https://www.getfigured.co/hr',
     siteName: 'Get Figured',
     type: 'website',

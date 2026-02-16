@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Sick Leave Accrual Calculator - State Law Compliance',
-  description: 'Free sick leave accrual calculator. Calculate sick leave by state law (CA, NY, IL). Stay compliant with state-mandated sick leave policies.',
-  keywords: 'sick leave calculator, sick leave accrual, California sick leave, state sick leave laws, sick time calculator',
+  title: 'Free Sick Leave Accrual Calculator: State-by-State Compliance (CA, NY, IL) | Get Figured',
+  description: 'Calculate sick leave accrual by state law. Covers California, New York, Illinois, and all states with paid sick leave mandates. Check your compliance instantly.',
+  keywords: 'sick leave calculator, sick leave accrual, sick time accrual calculator, California sick leave, state sick leave laws, sick time calculator, sick day accrual calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/hr/sick-leave-accrual',
   },
   openGraph: {
-    title: 'Sick Leave Accrual Calculator - State Law Compliance',
-    description: 'Free sick leave accrual calculator. Calculate sick leave by state law and stay compliant.',
+    title: 'Free Sick Leave Accrual Calculator: State-by-State Compliance (CA, NY, IL) | Get Figured',
+    description: 'Calculate sick leave accrual by state law. Covers California, New York, Illinois, and all states with paid sick leave mandates.',
     url: 'https://www.getfigured.co/hr/sick-leave-accrual',
     siteName: 'Get Figured',
     type: 'website',

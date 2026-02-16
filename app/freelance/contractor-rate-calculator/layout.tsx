@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Contractor Rate Calculator - W2 to 1099 Rate Conversion',
-  description: 'Free contractor rate calculator. Convert W2 salary to 1099 contractor hourly rate. Account for benefits, taxes, and overhead costs.',
-  keywords: 'contractor rate calculator, W2 to 1099, contractor hourly rate, independent contractor, 1099 rate',
+  title: 'Free Contractor Rate Calculator: Convert W2 Salary to 1099 Hourly Rate | Get Figured',
+  description: 'Convert your W2 salary to an equivalent 1099 contractor rate. Accounts for self-employment tax, health insurance, PTO, and overhead so you never undercharge.',
+  keywords: 'contractor rate calculator, W2 to 1099 calculator, contractor hourly rate, independent contractor rate, 1099 rate calculator, convert w2 hourly rate to 1099',
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/contractor-rate-calculator',
   },
   openGraph: {
-    title: 'Contractor Rate Calculator - W2 to 1099 Rate Conversion',
-    description: 'Free contractor rate calculator. Convert W2 salary to 1099 contractor hourly rate.',
+    title: 'Free Contractor Rate Calculator: Convert W2 Salary to 1099 Hourly Rate | Get Figured',
+    description: 'Convert your W2 salary to an equivalent 1099 contractor rate. Accounts for self-employment tax, health insurance, PTO, and overhead.',
     url: 'https://www.getfigured.co/freelance/contractor-rate-calculator',
     siteName: 'Get Figured',
     type: 'website',

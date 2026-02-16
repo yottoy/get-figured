@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Invoice Generator for Google Docs - Free Template',
-  description: 'Free invoice generator compatible with Google Docs. Create professional invoices, download as PDF or edit in Google Docs.',
-  keywords: 'invoice generator, Google Docs invoice, invoice template, free invoice maker',
+  title: 'Free Invoice Generator for Google Docs: Create, Download & Edit | Get Figured',
+  description: 'Create professional invoices and export to Google Docs or PDF. Add line items, tax, and discounts. Free template -- no account or software needed.',
+  keywords: 'invoice generator Google Docs, free invoice template, Google Docs invoice, invoice maker, invoice generator free, PDF invoice creator',
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/invoice-generator-google-docs',
   },
   openGraph: {
-    title: 'Invoice Generator for Google Docs - Free Template',
-    description: 'Free invoice generator compatible with Google Docs. Create professional invoices instantly.',
+    title: 'Free Invoice Generator for Google Docs: Create, Download & Edit | Get Figured',
+    description: 'Create professional invoices and export to Google Docs or PDF. Add line items, tax, and discounts. Free template -- no account needed.',
     url: 'https://www.getfigured.co/freelance/invoice-generator-google-docs',
     siteName: 'Get Figured',
     type: 'website',

@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Work Hours Calculator with Lunch Break - Timesheet Tool',
-  description: 'Free work hours calculator with lunch break. Calculate total work hours minus unpaid lunch breaks for accurate timesheets and payroll.',
-  keywords: 'work hours calculator, timesheet calculator, lunch break calculator, work time calculator, hours worked',
+  title: 'Free Work Hours Calculator with Lunch Break | Timesheet & Payroll',
+  description: 'Calculate total work hours minus lunch breaks instantly. Handles 30-min and 1-hour unpaid breaks, overtime, and weekly totals. No signup -- just enter your times.',
+  keywords: 'work hours calculator, lunch break calculator, timesheet calculator, work time calculator, hours worked with lunch, time card calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/time/work-hours-with-lunch',
   },
   openGraph: {
-    title: 'Work Hours Calculator with Lunch Break - Timesheet Tool',
-    description: 'Free work hours calculator with lunch break. Calculate total work hours minus unpaid lunch breaks.',
+    title: 'Free Work Hours Calculator with Lunch Break | Timesheet & Payroll',
+    description: 'Calculate total work hours minus lunch breaks instantly. Handles 30-min and 1-hour unpaid breaks, overtime, and weekly totals.',
     url: 'https://www.getfigured.co/time/work-hours-with-lunch',
     siteName: 'Get Figured',
     type: 'website',

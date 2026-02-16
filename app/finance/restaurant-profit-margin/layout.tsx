@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Restaurant Profit Margin Calculator - Food Cost & Prime Cost',
-  description: 'Free restaurant profit margin calculator. Calculate food cost percentage, labor cost, prime cost, and profit margins for your restaurant business.',
-  keywords: 'restaurant profit margin, food cost calculator, prime cost, restaurant finance, food cost percentage',
+  title: 'Free Restaurant Profit Margin Calculator: Food Cost, Labor & Prime Cost | Get Figured',
+  description: 'Calculate your restaurant profit margins, food cost %, labor cost %, and prime cost in one place. See exactly where your money goes and how to improve margins.',
+  keywords: 'restaurant profit margin calculator, food cost calculator, restaurant profit calculator, food profit margin calculator, prime cost, restaurant labor cost calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/finance/restaurant-profit-margin',
   },
   openGraph: {
-    title: 'Restaurant Profit Margin Calculator - Food Cost & Prime Cost',
-    description: 'Free restaurant profit margin calculator. Calculate food cost percentage, labor cost, and prime cost.',
+    title: 'Free Restaurant Profit Margin Calculator: Food Cost, Labor & Prime Cost | Get Figured',
+    description: 'Calculate your restaurant profit margins, food cost %, labor cost %, and prime cost in one place.',
     url: 'https://www.getfigured.co/finance/restaurant-profit-margin',
     siteName: 'Get Figured',
     type: 'website',

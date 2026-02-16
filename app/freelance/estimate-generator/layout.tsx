@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Estimate Generator - Create Professional Estimates',
-  description: 'Free estimate generator. Create professional estimates with line items, quantities, discounts, and tax. Download or print instantly.',
-  keywords: 'estimate generator, project estimate, estimate template, business estimate, quote generator',
+  title: 'Free Estimate Generator: Create & Download Professional Estimates | Get Figured',
+  description: 'Create professional project estimates in minutes. Add line items, quantities, discounts, and tax. Download as PDF or print instantly. No account needed.',
+  keywords: 'estimate generator, free estimate template, project estimate generator, quote generator, business estimate, estimate maker',
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/estimate-generator',
   },
   openGraph: {
-    title: 'Estimate Generator - Create Professional Estimates',
-    description: 'Free estimate generator. Create professional estimates with line items, quantities, discounts, and tax.',
+    title: 'Free Estimate Generator: Create & Download Professional Estimates | Get Figured',
+    description: 'Create professional project estimates in minutes. Add line items, quantities, discounts, and tax. Download as PDF or print instantly.',
     url: 'https://www.getfigured.co/freelance/estimate-generator',
     siteName: 'Get Figured',
     type: 'website',

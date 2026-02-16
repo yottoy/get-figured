@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Consulting Fee Calculator - Price Projects & Engagements',
-  description: 'Free consulting fee calculator. Price projects with hourly, fixed, or value-based fee structures. Calculate total fees and project profitability.',
-  keywords: 'consulting fee calculator, project pricing, consulting fees, hourly vs fixed pricing',
+  title: 'Free Consulting Fee Calculator: Price Hourly, Fixed & Value-Based Projects | Get Figured',
+  description: 'Calculate consulting fees for any engagement type. Compare hourly vs fixed vs value-based pricing, see total project cost and effective hourly rate. No signup.',
+  keywords: 'consulting fee calculator, consulting fees calculator, consultant fee calculator, project pricing calculator, consulting fees, how to calculate consulting fees',
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/consulting-fee-calculator',
   },
   openGraph: {
-    title: 'Consulting Fee Calculator - Price Projects & Engagements',
-    description: 'Free consulting fee calculator. Price projects with hourly, fixed, or value-based fee structures.',
+    title: 'Free Consulting Fee Calculator: Price Hourly, Fixed & Value-Based Projects | Get Figured',
+    description: 'Calculate consulting fees for any engagement type. Compare hourly vs fixed vs value-based pricing, see total project cost and effective hourly rate.',
     url: 'https://www.getfigured.co/freelance/consulting-fee-calculator',
     siteName: 'Get Figured',
     type: 'website',

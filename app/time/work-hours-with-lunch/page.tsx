@@ -134,6 +134,36 @@ export default function WorkHoursWithLunch() {
           </div>
         </div>
       </div>
+
+      {/* Common Scenarios - targets long-tail queries */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">Common Work Hour Scenarios</h2>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            { schedule: '8 AM to 5 PM, 30-min lunch', gross: '9 hours', net: '8.5 hours', weekly: '42.5 hours' },
+            { schedule: '8 AM to 5 PM, 1-hour lunch', gross: '9 hours', net: '8 hours', weekly: '40 hours' },
+            { schedule: '9 AM to 5 PM, 30-min lunch', gross: '8 hours', net: '7.5 hours', weekly: '37.5 hours' },
+            { schedule: '9 AM to 6 PM, 1-hour lunch', gross: '9 hours', net: '8 hours', weekly: '40 hours' },
+            { schedule: '7 AM to 3:30 PM, 30-min lunch', gross: '8.5 hours', net: '8 hours', weekly: '40 hours' },
+            { schedule: '10 AM to 6 PM, 30-min lunch', gross: '8 hours', net: '7.5 hours', weekly: '37.5 hours' },
+            { schedule: '8 AM to 4 PM, 30-min lunch', gross: '8 hours', net: '7.5 hours', weekly: '37.5 hours' },
+            { schedule: '8 AM to 4:30 PM, 30-min lunch', gross: '8.5 hours', net: '8 hours', weekly: '40 hours' },
+          ].map((scenario, i) => (
+            <div key={i} className="bg-white border border-slate-200 rounded-lg p-4">
+              <p className="font-medium text-slate-900 mb-2">{scenario.schedule}</p>
+              <div className="text-sm text-slate-600 space-y-1">
+                <p>Gross hours: {scenario.gross}</p>
+                <p>Net work hours: <span className="font-semibold text-slate-800">{scenario.net}</span></p>
+                <p>Weekly total (5 days): <span className="font-semibold text-slate-800">{scenario.weekly}</span></p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-slate-500 mt-4">
+          These calculations assume a 5-day work week with unpaid lunch breaks.
+          Use the calculator above for custom schedules and paid lunch scenarios.
+        </p>
+      </div>
     </div>
   )
 }

@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'PTO Calculator for Hourly Employees - Calculate Hours Earned',
-  description: 'Free PTO calculator for hourly employees. Calculate PTO earned based on hours worked with customizable accrual rates.',
-  keywords: 'PTO calculator hourly, hourly employee PTO, PTO hours calculator, time off for hourly workers',
+  title: 'Free PTO Calculator for Hourly Employees: Hours Earned per Pay Period | Get Figured',
+  description: 'Calculate PTO accrual based on hours worked. Enter your accrual rate and hours per week to see PTO earned per pay period, month, and year. Built for hourly workers.',
+  keywords: 'PTO calculator hourly, hourly employee PTO, PTO hours calculator, time off for hourly workers, pto accrual calculator, how to calculate pto for hourly employees',
   alternates: {
     canonical: 'https://www.getfigured.co/hr/pto-calculator-hourly',
   },
   openGraph: {
-    title: 'PTO Calculator for Hourly Employees - Calculate Hours Earned',
-    description: 'Free PTO calculator for hourly employees. Calculate PTO earned based on hours worked.',
+    title: 'Free PTO Calculator for Hourly Employees: Hours Earned per Pay Period | Get Figured',
+    description: 'Calculate PTO accrual based on hours worked. Enter your accrual rate and hours per week to see PTO earned per pay period, month, and year.',
     url: 'https://www.getfigured.co/hr/pto-calculator-hourly',
     siteName: 'Get Figured',
     type: 'website',

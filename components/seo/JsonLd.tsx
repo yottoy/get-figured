@@ -8,7 +8,7 @@ interface WebApplicationJsonLdProps {
 export function WebApplicationJsonLd({ name, description, url, category = 'BusinessApplication' }: WebApplicationJsonLdProps) {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'WebApplication',
+    '@type': 'SoftwareApplication',
     name,
     description,
     url,
@@ -19,6 +19,7 @@ export function WebApplicationJsonLd({ name, description, url, category = 'Busin
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
     },
     creator: {
       '@type': 'Organization',

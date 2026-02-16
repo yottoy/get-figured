@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Time Off Accrual Calculator - Track Employee Leave',
-  description: 'Free time off accrual calculator. Track PTO balance, accrual schedule, and policy compliance with customizable settings.',
-  keywords: 'time off accrual, leave accrual calculator, employee leave tracker, PTO policy, time off balance',
+  title: 'Free Time Off Accrual Calculator: Track PTO, Sick & Vacation Leave | Get Figured',
+  description: 'Track all employee time off in one place. Calculate accrual schedules for PTO, sick days, and vacation with customizable policies, caps, and carryover rules.',
+  keywords: 'time off accrual calculator, leave accrual calculator, employee leave tracker, PTO policy calculator, time off balance, paid time off calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/hr/time-off-accrual',
   },
   openGraph: {
-    title: 'Time Off Accrual Calculator - Track Employee Leave',
-    description: 'Free time off accrual calculator. Track PTO balance, accrual schedule, and policy compliance.',
+    title: 'Free Time Off Accrual Calculator: Track PTO, Sick & Vacation Leave | Get Figured',
+    description: 'Track all employee time off in one place. Calculate accrual schedules for PTO, sick days, and vacation with customizable policies.',
     url: 'https://www.getfigured.co/hr/time-off-accrual',
     siteName: 'Get Figured',
     type: 'website',

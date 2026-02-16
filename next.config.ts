@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
           },
         ],
         destination: 'https://www.getfigured.co/:path*',
-        permanent: true,
+        statusCode: 301,
       },
     ]
   },

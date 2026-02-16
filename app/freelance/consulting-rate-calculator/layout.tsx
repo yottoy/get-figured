@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Consulting Rate Calculator - Calculate Your Hourly Rate',
-  description: 'Free consulting rate calculator. Calculate your hourly consulting rate based on desired salary, expenses, billable hours, and profit margin.',
-  keywords: 'consulting rate calculator, hourly rate calculator, consultant pricing, freelance rate',
+  title: 'Free Consulting Rate Calculator: Find Your Hourly & Daily Rate | Get Figured',
+  description: 'Calculate your ideal consulting rate from salary, expenses, and billable hours. See hourly, daily, and project rates instantly. Used by 1,000+ consultants.',
+  keywords: 'consulting rate calculator, hourly rate calculator, consultant pricing, freelance rate, consulting fees, how to calculate consulting rate',
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/consulting-rate-calculator',
   },
   openGraph: {
-    title: 'Consulting Rate Calculator - Calculate Your Hourly Rate',
-    description: 'Free consulting rate calculator. Calculate your hourly consulting rate based on desired salary and expenses.',
+    title: 'Free Consulting Rate Calculator: Find Your Hourly & Daily Rate | Get Figured',
+    description: 'Calculate your ideal consulting rate from salary, expenses, and billable hours. See hourly, daily, and project rates instantly.',
     url: 'https://www.getfigured.co/freelance/consulting-rate-calculator',
     siteName: 'Get Figured',
     type: 'website',

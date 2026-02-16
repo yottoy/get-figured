@@ -3,10 +3,10 @@ import type { NextRequest } from 'next/server'
 
 export function proxy(request: NextRequest) {
   const host = request.headers.get('host') || ''
-  const { pathname, search } = request.nextUrl
 
-  // Redirect non-www to www (single hop)
+  // Redirect non-www to www with 301 (single hop)
   if (host === 'getfigured.co' || host.startsWith('getfigured.co:')) {
+    const { pathname, search } = request.nextUrl
     return NextResponse.redirect(
       `https://www.getfigured.co${pathname}${search}`,
       301
@@ -19,6 +19,6 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     // Match all paths except static files and Next.js internals
-    '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
+    '/((?!_next/static|_next/image|favicon.ico).*)',
   ],
 }

@@ -3,15 +3,15 @@ import { Clock } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Time & Payroll Calculators - Get Figured',
-  description: 'Free time calculators for work hours, overtime pay, and timesheets. Perfect for hourly employees and payroll managers.',
-  keywords: 'overtime calculator, work hours calculator, timesheet calculator, payroll calculator',
+  title: 'Free Time & Payroll Calculators: Work Hours, Overtime & Lunch Breaks | Get Figured',
+  description: 'Calculate work hours with lunch breaks, overtime pay with 1.5x/2x rates, and weekly timesheets. Built for hourly employees and payroll managers.',
+  keywords: 'work hours calculator, overtime calculator, timesheet calculator, lunch break calculator, payroll calculator, time card calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/time',
   },
   openGraph: {
-    title: 'Time & Payroll Calculators - Get Figured',
-    description: 'Free time calculators for work hours, overtime pay, and timesheets.',
+    title: 'Free Time & Payroll Calculators: Work Hours, Overtime & Lunch Breaks | Get Figured',
+    description: 'Calculate work hours with lunch breaks, overtime pay with 1.5x/2x rates, and weekly timesheets. Built for hourly employees and payroll managers.',
     url: 'https://www.getfigured.co/time',
     siteName: 'Get Figured',
     type: 'website',

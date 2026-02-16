@@ -3,15 +3,15 @@ import { TrendingUp } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Finance & Profit Calculators - Get Figured',
-  description: 'Free finance calculators for profit margins, markup, P&L statements, and restaurant margins. Make better financial decisions for your business.',
-  keywords: 'profit margin calculator, markup calculator, profit and loss, restaurant margin, financial calculator',
+  title: 'Free Finance & Profit Calculators: Margins, Markup & P&L | Get Figured',
+  description: 'Calculate profit margins, markup percentages, P&L statements, and restaurant food costs. 4 free tools for smarter financial decisions. No signup needed.',
+  keywords: 'profit margin calculator, markup calculator, profit and loss calculator, P&L generator, restaurant profit margin, food cost calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/finance',
   },
   openGraph: {
-    title: 'Finance & Profit Calculators - Get Figured',
-    description: 'Free finance calculators for profit margins, markup, P&L statements, and restaurant margins.',
+    title: 'Free Finance & Profit Calculators: Margins, Markup & P&L | Get Figured',
+    description: 'Calculate profit margins, markup percentages, P&L statements, and restaurant food costs. 4 free tools for smarter financial decisions.',
     url: 'https://www.getfigured.co/finance',
     siteName: 'Get Figured',
     type: 'website',

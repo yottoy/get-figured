@@ -19,16 +19,16 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Get Figured - Free Business Calculators & Tools",
-  description: "Free business calculators for freelancers, consultants, and small business owners. Calculate rates, PTO, profit margins, and more.",
-  keywords: "business calculator, consulting rate calculator, PTO calculator, profit margin calculator, freelance pricing",
+  title: "Free Business Calculators for Freelancers & Small Business | Get Figured",
+  description: "Free online calculators for consulting rates, PTO accrual, work hours, profit margins, and invoices. No signup required -- instant results in your browser.",
+  keywords: "business calculator, consulting rate calculator, PTO calculator, profit margin calculator, freelance pricing, work hours calculator",
   metadataBase: new URL('https://www.getfigured.co'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Get Figured - Free Business Calculators & Tools',
-    description: 'Free business calculators for freelancers, consultants, and small business owners.',
+    title: 'Free Business Calculators for Freelancers & Small Business | Get Figured',
+    description: 'Free online calculators for consulting rates, PTO accrual, work hours, profit margins, and invoices. No signup required.',
     url: 'https://www.getfigured.co',
     siteName: 'Get Figured',
     type: 'website',
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Get Figured - Free Business Calculators & Tools',
-    description: 'Free business calculators for freelancers, consultants, and small business owners.',
+    title: 'Free Business Calculators for Freelancers & Small Business | Get Figured',
+    description: 'Free online calculators for consulting rates, PTO accrual, work hours, profit margins, and invoices. No signup required.',
   },
   robots: {
     index: true,

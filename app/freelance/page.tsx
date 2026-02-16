@@ -3,15 +3,15 @@ import { Calculator } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Freelance & Consulting Calculators - Get Figured',
-  description: 'Free freelance calculators for rates, pricing, estimates, and invoices. Calculate consulting rates, contractor rates, and more. No signup required.',
-  keywords: 'consulting rate calculator, freelance pricing, contractor rate, invoice generator, estimate generator',
+  title: 'Free Freelance & Consulting Calculators: Rates, Pricing & Invoices | Get Figured',
+  description: '8 free tools for freelancers and consultants. Calculate your hourly rate, price projects, convert W2 to 1099, generate estimates and invoices. No signup.',
+  keywords: 'consulting rate calculator, freelance pricing calculator, contractor rate calculator, invoice generator, estimate generator, consulting fee calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/freelance',
   },
   openGraph: {
-    title: 'Freelance & Consulting Calculators - Get Figured',
-    description: 'Free freelance calculators for rates, pricing, estimates, and invoices.',
+    title: 'Free Freelance & Consulting Calculators: Rates, Pricing & Invoices | Get Figured',
+    description: '8 free tools for freelancers and consultants. Calculate your hourly rate, price projects, convert W2 to 1099, generate estimates and invoices.',
     url: 'https://www.getfigured.co/freelance',
     siteName: 'Get Figured',
     type: 'website',

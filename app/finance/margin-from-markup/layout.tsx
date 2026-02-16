@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Calculate Margin from Markup - Convert Markup to Margin',
-  description: 'Free calculator to convert markup percentage to profit margin. Understand the relationship between markup and margin with examples.',
-  keywords: 'margin from markup, markup to margin, profit margin calculator, markup conversion',
+  title: 'Free Markup to Margin Converter: Calculate Margin from Any Markup % | Get Figured',
+  description: 'Convert any markup percentage to profit margin instantly. Includes conversion formula, common markup-to-margin table, and examples for retail and wholesale.',
+  keywords: 'margin from markup, markup to margin calculator, markup to margin conversion, profit margin from markup, markup conversion calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/finance/margin-from-markup',
   },
   openGraph: {
-    title: 'Calculate Margin from Markup - Convert Markup to Margin',
-    description: 'Free calculator to convert markup percentage to profit margin.',
+    title: 'Free Markup to Margin Converter: Calculate Margin from Any Markup % | Get Figured',
+    description: 'Convert any markup percentage to profit margin instantly. Includes conversion formula, common markup-to-margin table, and examples.',
     url: 'https://www.getfigured.co/finance/margin-from-markup',
     siteName: 'Get Figured',
     type: 'website',

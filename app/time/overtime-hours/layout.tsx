@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Overtime Hours Calculator - Calculate Overtime Pay',
-  description: 'Free overtime hours calculator. Calculate overtime pay based on federal or California rules with 1.5x and 2x rates. Includes daily and weekly overtime.',
-  keywords: 'overtime calculator, overtime pay calculator, overtime hours, time and a half, California overtime',
+  title: 'Free Overtime Calculator: Calculate Overtime Pay (Federal & California Rules) | Get Figured',
+  description: 'Calculate overtime pay with 1.5x and 2x rates. Supports federal 40-hour weekly rules and California daily overtime. Enter your hours and see your total pay.',
+  keywords: 'overtime calculator, overtime pay calculator, overtime hours calculator, time and a half calculator, California overtime, weekly overtime calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/time/overtime-hours',
   },
   openGraph: {
-    title: 'Overtime Hours Calculator - Calculate Overtime Pay',
-    description: 'Free overtime hours calculator. Calculate overtime pay based on federal or California rules.',
+    title: 'Free Overtime Calculator: Calculate Overtime Pay (Federal & California Rules) | Get Figured',
+    description: 'Calculate overtime pay with 1.5x and 2x rates. Supports federal 40-hour weekly rules and California daily overtime.',
     url: 'https://www.getfigured.co/time/overtime-hours',
     siteName: 'Get Figured',
     type: 'website',

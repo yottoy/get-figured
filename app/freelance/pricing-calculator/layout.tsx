@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Freelance Pricing Calculator - Find Your Market Rate',
-  description: 'Free freelance pricing calculator. Find your market rate based on experience level, industry, location, and skill level. Price your services competitively.',
-  keywords: 'freelance pricing, market rate calculator, freelance rate, pricing guide, freelance income',
+  title: 'Free Freelance Pricing Calculator: Find Your Market Rate by Industry | Get Figured',
+  description: 'Discover your competitive freelance rate by industry, experience, and location. See how your pricing compares to market benchmarks and adjust with confidence.',
+  keywords: 'freelance pricing calculator, market rate calculator, freelance rate, freelance consultant rates, freelance hourly rate, how much should I charge freelancing',
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/pricing-calculator',
   },
   openGraph: {
-    title: 'Freelance Pricing Calculator - Find Your Market Rate',
-    description: 'Free freelance pricing calculator. Find your market rate based on experience level, industry, and location.',
+    title: 'Free Freelance Pricing Calculator: Find Your Market Rate by Industry | Get Figured',
+    description: 'Discover your competitive freelance rate by industry, experience, and location. See how your pricing compares to market benchmarks.',
     url: 'https://www.getfigured.co/freelance/pricing-calculator',
     siteName: 'Get Figured',
     type: 'website',

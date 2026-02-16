@@ -175,11 +175,8 @@ export default function EstimateGenerator() {
           </div>
 
           <div className="mt-6 space-y-2">
-            <Button variant="primary" className="w-full">
+            <Button variant="primary" className="w-full" onClick={() => window.print()}>
               Download PDF
-            </Button>
-            <Button variant="secondary" className="w-full">
-              Copy Shareable Link
             </Button>
           </div>
         </div>

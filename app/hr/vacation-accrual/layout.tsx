@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Vacation Accrual Calculator - Calculate Vacation Days',
-  description: 'Free vacation accrual calculator. Calculate vacation accrual by pay period, tenure, or hours worked. Track vacation balance and policy compliance.',
-  keywords: 'vacation accrual calculator, vacation days calculator, vacation time, vacation policy, annual leave calculator',
+  title: 'Free Vacation Accrual Calculator: Days Earned by Pay Period & Tenure | Get Figured',
+  description: 'Calculate vacation days earned by pay period, tenure, or hours worked. Track your vacation balance with proration for new hires and part-time employees.',
+  keywords: 'vacation accrual calculator, vacation days calculator, prorated vacation calculator, vacation time calculator, annual leave calculator, accrual vacation calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/hr/vacation-accrual',
   },
   openGraph: {
-    title: 'Vacation Accrual Calculator - Calculate Vacation Days',
-    description: 'Free vacation accrual calculator. Calculate vacation accrual by pay period, tenure, or hours worked.',
+    title: 'Free Vacation Accrual Calculator: Days Earned by Pay Period & Tenure | Get Figured',
+    description: 'Calculate vacation days earned by pay period, tenure, or hours worked. Track your vacation balance with proration for new hires and part-time employees.',
     url: 'https://www.getfigured.co/hr/vacation-accrual',
     siteName: 'Get Figured',
     type: 'website',
