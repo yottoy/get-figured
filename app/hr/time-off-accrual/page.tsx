@@ -58,6 +58,37 @@ export default function TimeOffAccrualCalculator() {
           ensures compliance with laws in states like California, New York, and Colorado.
         </p>
       </div>
+
+      {/* Common Scenarios - targets long-tail queries */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">Common Time Off Accrual Scenarios</h2>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            { policy: '10 days/year, biweekly accrual', perPeriod: '3.08 hrs per paycheck', annual: '80 hours / 10 days', notes: 'Standard entry-level US policy' },
+            { policy: '15 days/year, biweekly accrual', perPeriod: '4.62 hrs per paycheck', annual: '120 hours / 15 days', notes: 'Most common mid-tenure US policy' },
+            { policy: '20 days/year, biweekly accrual', perPeriod: '6.15 hrs per paycheck', annual: '160 hours / 20 days', notes: 'Senior or 5+ years tenure' },
+            { policy: '25 days/year, biweekly accrual', perPeriod: '7.69 hrs per paycheck', annual: '200 hours / 25 days', notes: 'Executive or European-style policy' },
+            { policy: '15 days/year, semimonthly (2x/month)', perPeriod: '5.00 hrs per paycheck', annual: '120 hours / 15 days', notes: '24 pay periods per year' },
+            { policy: '15 days/year, monthly accrual', perPeriod: '10.00 hrs per month', annual: '120 hours / 15 days', notes: 'Salaried employees, simpler tracking' },
+            { policy: '1 hr per 30 hrs worked (CA-style)', perPeriod: '1.33 hrs per 40-hr week', annual: '~69 hours / 8.6 days', notes: 'Hourly employees, California compliant' },
+            { policy: 'Front-load: 15 days on hire date', perPeriod: 'N/A (lump sum)', annual: '120 hours granted upfront', notes: 'Simple but creates liability if employee leaves' },
+          ].map((s, i) => (
+            <div key={i} className="bg-white border border-slate-200 rounded-lg p-4">
+              <p className="font-medium text-slate-900 mb-2">{s.policy}</p>
+              <div className="text-sm text-slate-600 space-y-1">
+                <p>Per period: <span className="font-semibold text-slate-800">{s.perPeriod}</span></p>
+                <p>Annual total: <span className="font-semibold text-slate-800">{s.annual}</span></p>
+                <p className="text-xs text-slate-500 italic mt-2">{s.notes}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-slate-500 mt-4">
+          These calculations assume 8-hour days and standard US pay schedules (26 biweekly periods,
+          24 semimonthly periods, or 12 monthly periods per year). For state-specific rules and
+          custom policies, use the PTO Accrual Calculator above.
+        </p>
+      </div>
     </div>
   )
 }

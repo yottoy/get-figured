@@ -153,6 +153,42 @@ export default function ContractorRateCalculator() {
           </div>
         </div>
       </div>
+
+      {/* Common Scenarios - targets long-tail queries */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">Common W2-to-Contractor Rate Scenarios</h2>
+        <p className="text-sm text-slate-600 mb-6">
+          Examples assume 1,680 billable hours/year (35 hrs/week × 48 weeks), standard self-employment tax (15.3%),
+          15% business expenses, and a 20% target profit margin.
+        </p>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            { w2: '$60K W2 + basic benefits', benefits: '$8K health, $3K 401k, 15 PTO days', rate: '$58/hr', annual: '$97K gross', notes: 'Entry-level contractor pricing' },
+            { w2: '$80K W2 + standard benefits', benefits: '$10K health, $4K 401k, 18 PTO days', rate: '$76/hr', annual: '$128K gross', notes: 'Common mid-career transition rate' },
+            { w2: '$100K W2 + standard benefits', benefits: '$12K health, $6K 401k, 20 PTO days', rate: '$94/hr', annual: '$158K gross', notes: 'Most common scenario for mid-level engineers' },
+            { w2: '$120K W2 + premium benefits', benefits: '$15K health, $8K 401k, 22 PTO days', rate: '$114/hr', annual: '$192K gross', notes: 'Senior IC or specialist transition' },
+            { w2: '$150K W2 + premium benefits', benefits: '$18K health, $10K 401k, 25 PTO days', rate: '$143/hr', annual: '$240K gross', notes: 'Senior engineer / staff-level transition' },
+            { w2: '$180K W2 + premium benefits', benefits: '$20K health, $12K 401k, 25 PTO days', rate: '$170/hr', annual: '$286K gross', notes: 'Principal or staff engineer rate' },
+            { w2: '$200K W2 + executive package', benefits: '$22K health, $15K 401k, 30 PTO days', rate: '$192/hr', annual: '$323K gross', notes: 'Executive or specialized expert rate' },
+            { w2: '$250K W2 + executive package', benefits: '$25K health, $18K 401k, 30 PTO days', rate: '$237/hr', annual: '$398K gross', notes: 'Director-level or niche specialist' },
+          ].map((s, i) => (
+            <div key={i} className="bg-white border border-slate-200 rounded-lg p-4">
+              <p className="font-medium text-slate-900 mb-1">{s.w2}</p>
+              <p className="text-xs text-slate-500 mb-2">{s.benefits}</p>
+              <div className="text-sm text-slate-600 space-y-1">
+                <p>Contractor rate: <span className="font-semibold text-slate-800">{s.rate}</span></p>
+                <p>Annual gross: <span className="font-semibold text-slate-800">{s.annual}</span></p>
+                <p className="text-xs text-slate-500 italic mt-2">{s.notes}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-slate-500 mt-4">
+          A common rule of thumb: divide your W2 salary by 1,000 for a rough hourly contractor rate
+          (e.g., $100K → $100/hr). This calculator gives you a more accurate number that accounts for
+          benefits, taxes, expenses, and your target profit margin.
+        </p>
+      </div>
     </div>
   )
 }

@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/proforma-invoice-generator',
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: 'Free Proforma Invoice Generator for International Shipping & Customs | Get Figured',
     description: 'Create proforma invoices for customs, international shipments, and quotations. Professional templates with HS codes and shipping details.',

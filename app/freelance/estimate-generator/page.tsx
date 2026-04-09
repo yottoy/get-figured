@@ -181,6 +181,78 @@ export default function EstimateGenerator() {
           </div>
         </div>
       </div>
+
+      {/* Common Examples - targets long-tail queries */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">Common Project Estimate Examples</h2>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            {
+              title: 'Web Design — 5-page Marketing Site',
+              items: ['Discovery & wireframes (8 hrs @ $125)', 'Visual design (16 hrs @ $125)', 'Responsive build (24 hrs @ $125)', 'QA & launch (4 hrs @ $125)'],
+              total: '$6,500',
+              timeline: '3-4 weeks',
+            },
+            {
+              title: 'Logo & Brand Identity',
+              items: ['Brand discovery workshop (4 hrs @ $150)', 'Logo concepts (3 directions, $1,200)', 'Refinement & finalization ($600)', 'Brand guidelines PDF ($800)'],
+              total: '$3,200',
+              timeline: '2-3 weeks',
+            },
+            {
+              title: 'Custom Development Sprint',
+              items: ['Sprint planning (4 hrs @ $150)', 'Backend API work (40 hrs @ $150)', 'Frontend integration (20 hrs @ $150)', 'Testing & deployment (8 hrs @ $150)'],
+              total: '$10,800',
+              timeline: '2 weeks (1 sprint)',
+            },
+            {
+              title: 'Marketing Consulting Engagement',
+              items: ['Audit & strategy (10 hrs @ $200)', 'Channel analysis report ($1,500)', 'Quarterly playbook ($2,500)', 'Implementation review (4 hrs @ $200)'],
+              total: '$6,800',
+              timeline: '4-6 weeks',
+            },
+            {
+              title: 'SEO Content Package',
+              items: ['Keyword research ($800)', '10 long-form articles ($350 ea)', 'Technical SEO audit ($1,200)', 'Internal linking pass ($400)'],
+              total: '$5,900',
+              timeline: '6-8 weeks',
+            },
+            {
+              title: 'WordPress to Headless Migration',
+              items: ['Architecture planning (8 hrs @ $175)', 'Content migration scripts (24 hrs @ $175)', 'Frontend rebuild (60 hrs @ $175)', 'DNS & launch (6 hrs @ $175)'],
+              total: '$17,150',
+              timeline: '6-8 weeks',
+            },
+            {
+              title: 'Mobile App MVP (iOS + Android)',
+              items: ['UX wireframes ($3,000)', 'Visual design ($4,500)', 'React Native build ($25,000)', 'App store submission ($1,500)'],
+              total: '$34,000',
+              timeline: '10-12 weeks',
+            },
+            {
+              title: 'E-commerce Setup (Shopify)',
+              items: ['Theme customization (16 hrs @ $125)', 'Product import & setup ($1,200)', 'Payment & shipping config ($800)', 'Launch & training (4 hrs @ $125)'],
+              total: '$4,500',
+              timeline: '2-3 weeks',
+            },
+          ].map((ex, i) => (
+            <div key={i} className="bg-white border border-slate-200 rounded-lg p-4">
+              <p className="font-medium text-slate-900 mb-2">{ex.title}</p>
+              <ul className="text-xs text-slate-600 space-y-1 mb-3">
+                {ex.items.map((item, j) => <li key={j}>• {item}</li>)}
+              </ul>
+              <div className="text-sm text-slate-600 space-y-1 border-t pt-2">
+                <p>Estimate total: <span className="font-semibold text-slate-800">{ex.total}</span></p>
+                <p>Timeline: <span className="font-semibold text-slate-800">{ex.timeline}</span></p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-slate-500 mt-4">
+          These examples reflect typical 2026 freelance market rates in the US. Adjust line items and
+          rates above to match your specific project, location, and experience level.
+        </p>
+      </div>
     </div>
   )
 }

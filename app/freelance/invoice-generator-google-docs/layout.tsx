@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/invoice-generator-google-docs',
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: 'Free Invoice Generator for Google Docs: Create, Download & Edit | Get Figured',
     description: 'Create professional invoices and export to Google Docs or PDF. Add line items, tax, and discounts. Free template -- no account needed.',

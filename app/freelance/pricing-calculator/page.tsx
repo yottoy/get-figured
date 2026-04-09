@@ -129,6 +129,37 @@ export default function FreelancePricingCalculator() {
           </div>
         </div>
       </div>
+
+      {/* Common Scenarios - targets long-tail queries */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">Common Freelance Pricing Scenarios</h2>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            { who: 'Junior Web Developer (US)', exp: '0-2 years experience', hourly: '$35-$60/hr', project: '$2,000-$5,000 small project', notes: 'Focus on building portfolio and recurring clients' },
+            { who: 'Mid-level Designer (US)', exp: '2-5 years experience', hourly: '$60-$100/hr', project: '$3,500-$8,000 brand identity', notes: 'Specialization (e.g., SaaS UI) commands 20-30% premium' },
+            { who: 'Senior Software Engineer (US)', exp: '5-10 years experience', hourly: '$100-$175/hr', project: '$15K-$40K MVP build', notes: 'Move toward value-based or retainer pricing' },
+            { who: 'Expert Marketing Consultant (US)', exp: '10+ years experience', hourly: '$150-$300/hr', project: '$5K-$15K/mo retainer', notes: 'Position as strategist, not tactical executor' },
+            { who: 'Mid-level Writer (Europe)', exp: '2-5 years experience', hourly: '$50-$85/hr', project: '$0.30-$0.80/word for long-form', notes: 'Niche expertise (fintech, health) doubles rates' },
+            { who: 'Senior Developer (Latin America)', exp: '5-10 years experience', hourly: '$45-$85/hr', project: '$8K-$20K MVP build', notes: 'US clients pay 2-3x local market rates' },
+            { who: 'Junior Designer (Asia)', exp: '0-2 years experience', hourly: '$20-$40/hr', project: '$800-$2,500 small project', notes: 'Build international portfolio on Dribbble/Behance' },
+            { who: 'Expert Consultant (Europe)', exp: '10+ years experience', hourly: '$120-$250/hr', project: '$8K-$25K/mo retainer', notes: 'EU VAT considerations apply for cross-border work' },
+          ].map((s, i) => (
+            <div key={i} className="bg-white border border-slate-200 rounded-lg p-4">
+              <p className="font-medium text-slate-900 mb-1">{s.who}</p>
+              <p className="text-xs text-slate-500 mb-2">{s.exp}</p>
+              <div className="text-sm text-slate-600 space-y-1">
+                <p>Hourly range: <span className="font-semibold text-slate-800">{s.hourly}</span></p>
+                <p>Project: <span className="font-semibold text-slate-800">{s.project}</span></p>
+                <p className="text-xs text-slate-500 italic mt-2">{s.notes}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-slate-500 mt-4">
+          These ranges reflect 2026 market conditions. Actual rates vary by specialization, client size,
+          and negotiation. Use the calculator above to fine-tune your rate based on your specific profile.
+        </p>
+      </div>
     </div>
   )
 }
