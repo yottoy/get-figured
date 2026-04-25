@@ -5,15 +5,15 @@ import FAQSection from '@/components/seo/FAQSection'
 import RelatedCalculators from '@/components/seo/RelatedCalculators'
 
 export const metadata: Metadata = {
-  title: 'Free Contractor Hourly Rate Calculator: W2 to Independent Rate | Get Figured',
-  description: 'Calculate the hourly rate you need as an independent contractor. Factors in taxes, insurance, PTO, retirement, and business expenses you now pay yourself.',
+  title: 'Contractor Rate Calculator — Convert W2 Salary to 1099 Hourly Rate',
+  description: 'Enter your W2 salary to find your true 1099 hourly rate. Adds self-employment tax, health insurance, PTO, and retirement — with a full cost breakdown.',
   keywords: 'contractor hourly rate calculator, independent contractor rate, hourly rate calculator, W2 to contractor rate, contractor pricing, business hourly rate calculator',
   alternates: {
     canonical: 'https://www.getfigured.co/freelance/contractor-hourly-rate-calculator',
   },
   openGraph: {
-    title: 'Free Contractor Hourly Rate Calculator: W2 to Independent Rate | Get Figured',
-    description: 'Calculate the hourly rate you need as an independent contractor. Factors in taxes, insurance, PTO, retirement, and business expenses.',
+    title: 'Contractor Rate Calculator — Convert W2 Salary to 1099 Hourly Rate',
+    description: 'Enter your W2 salary to find your true 1099 hourly rate. Adds self-employment tax, health insurance, PTO, and retirement — with a full cost breakdown.',
     url: 'https://www.getfigured.co/freelance/contractor-hourly-rate-calculator',
     siteName: 'Get Figured',
     type: 'website',

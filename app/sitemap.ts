@@ -21,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/freelance/contractor-rate-calculator',
     '/freelance/contractor-hourly-rate-calculator',
     '/freelance/estimate-generator',
+    '/freelance/proforma-invoice-generator',
+    '/freelance/invoice-generator-google-docs',
   ]
 
   const hrTools = [
